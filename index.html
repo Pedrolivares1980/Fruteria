@@ -194,7 +194,7 @@
         </section>
         <section class="container bg-success p-3" id="contacto" >
             <h3 class="text-center p-3">Contacto</h3>
-            <form name="formulario-contacto"  class="row g-3" netlify>
+            <form name="formulario-contacto"  class="row g-3" method="POST" data-netlify="true">
                 <div class="col-md-6">
                     <label for="firstName" class="form-label">Nombre</label>
                     <input name="Nombre" type="text" id="firstName" class="form-control" required placeholder="Tu nombre">
@@ -219,6 +219,8 @@
                     <button type="submit" class="btn btn-primary">Enviar</button>
                     <input type="hidden" name="_next" value="https://frutasramon.netlify.app/">
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="form-name" value="contact">
+
                 </div>
             </form>
         </section>
